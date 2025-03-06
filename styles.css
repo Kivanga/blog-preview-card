@@ -37,10 +37,7 @@ body {
     padding: 1.5rem;
     max-width: 360px;
     margin: 1rem;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Card Header */
@@ -78,6 +75,11 @@ body {
     color: var(--gray-950);
 }
 
+.card__title:hover{
+    cursor: pointer;
+    color: var(--yellow);
+}
+
 .card__description {
     font-size: 0.875rem;
     color: var(--gray-500);
@@ -101,4 +103,36 @@ body {
 .author__name {
     color: var(--gray-950);
     font-weight: var(--fw-extrabold);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .learning-card {
+        max-width: 420px;
+    }
+
+    .card__image {
+        width: 100%;
+    }
+
+    .card__badge {
+        margin-bottom: 0.5rem;
+    }
+
+    .card__date {
+        font-size: 1rem;
+    }
+
+    .card__title {
+        font-size: 2rem;
+    }
+
+    .card__description {
+        font-size: 1rem;
+    }
+
+    .author__avatar {
+        width: 60px;
+        height: 60px;
+    }
 }
